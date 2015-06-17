@@ -7930,7 +7930,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* ADDITION BY SELF*/
 header{
     position:relative;
-    height:55vh;
+    height:60vh;
     background-color:#607D8B;
     background-size: cover;
     background-position: center;
