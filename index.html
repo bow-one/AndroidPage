@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name = "description" content="A simple, but powerful Material Design list Android application.">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Material List</title>
@@ -17,11 +19,11 @@
     <div class="nav-wrapper container"><img class="responsive-img" src="icons/app_icon.png" alt="logo" height="60px" width="60px"></a>
         <a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#features">Features</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#features">Features</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
@@ -81,7 +83,7 @@
       <br><br>
 
         <div class="divider"></div>
-
+<div id="features" class="section scrollspy"></div>
 <!-- App showcase -->
     <div class="row" role="showcase">
         <div class="col s12 m6 wow slideInLeft">
@@ -105,33 +107,26 @@
   <footer class="page-footer blue-grey darken-2">
     <div class="container">
       <div class="row">
-        <div class="col l4 s12">
-          <h5 class="white-text">About</h5>
-          <p class="grey-text text-lighten-4">A simple app.</p>
+        <div class="col l6 s12">
+          <h5 class="white-text center-align">About</h5>
+          <p class="grey-text text-lighten-4 center">A simple app.</p>
+            <p class="grey-text text-lighten-4 center">Made  by <a href="http://www.bowenchin.com">Bowen Chin.</a></p>
         </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+        <div class="col l6 s12">
+          <h5 class="white-text center-align">Connect</h5>
+          <div class="center-align">
+            <ul>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Play Store</a></li>
+            <li><a class="white-text" href="#!">GitHub</a></li>
           </ul>
         </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-          <div class="center-align">© 2015 CHIN, Bo Wen</div>
+          <div class="center-align"><a href="http://www.bowenchin.com">© 2015 CHIN, Bo Wen</a></div>
       </div>
     </div>
   </footer>
@@ -145,6 +140,10 @@
   <script src="js/init.js"></script>
   <script>    
       $(".button-collapse").sideNav();
+      $(document).ready(function(){
+          $('.scrollspy').scrollSpy();
+      });
+        
   </script>
   </body>
 </html>
