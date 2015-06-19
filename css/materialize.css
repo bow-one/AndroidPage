@@ -7958,10 +7958,23 @@ header{
     text-align: left;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .right_column_page {
+      margin-top: 0px;
+      text-align: center;
+  } 
+}
+
+.left_column_page{
+    float:left;
+    width:100%;
+    margin-top:17%;
+    margin-left:0px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .left_column_page {
       margin-top: 0px;
       text-align: center;
   } 
